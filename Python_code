@@ -1,0 +1,23 @@
+#For user to enter the desired lines
+n = int(input("No. of lines required : "))
+
+dict_list = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+
+#Upper pattern
+for i in range(1,n+1):
+    for j in range(n,i,-1):
+        print(" ",end="")
+    for j in range(i):
+        print(dict_list[j],end=" ")
+
+    print()
+    
+#Lower pattern    
+for i in range(1,n+1):
+    for j in range(i):
+        print(" ",end="")
+    for j in range(i,n):
+        print(dict_list[j-i],end=" ")
+
+    print()
+    
